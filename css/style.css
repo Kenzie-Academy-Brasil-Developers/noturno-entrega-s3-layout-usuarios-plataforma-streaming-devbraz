@@ -16,23 +16,204 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
+	margin: 0;
+	padding: 0;
+
   
 }
 
-/*BODY*/
-	body{
+html {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: #00002e;
+}
 
-	}
+/*BODY*/
+body{
+
+}
 
 /*TOPO*/
-	header.topo{
+header.topo{
 		
-	}
+}
+header img {
+	width: 300px;
+}
 
 /*RODAPÉ*/
+
+.footer-button {
+	background-color: #00002e;
+	border-color: white;
+	align-items: center;
+	color: white;
+	padding: 10px 24px;
+
+}
 	
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+.pg-home {
+	display: flex;	
+	flex-direction: row;
+	justify-content: center;
+}
+
+.all-users-boxes{
+	text-align: center;
+	width: 858px;
+	flex-grow: 1;
+    flex-shrink: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.user-box {
+	width: 186px
+
+}
+
+li {
+	width: 186px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul img {
+	width: 150px;
+	height: 150px;
+}
+
+figure {
+	text-align: center;
+
+}
+
+ul figure {
+	height: 184px;
+	width: 184px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #00002e;
+	border: 1px solid;
+	
+}
+
+h3 {
+	text-align: center;
+	color: darkgray;
+}
+
+h2 {
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+.addPerfil {
+}
+
+.addPerfil figure {
+	height: 161px;
+	padding-top: 25px;
+}
+
+.addPerfil img {
+	width: 100px;
+	height: 100px;
+
+
+}
+
+figcaption {
+	color: #00002e;
+}
+
+li figure:hover + h3 {
+	border-color: white;
+	color: white;
+}
+
+li figure:hover {
+	border-color: white;
+}
+
+
+
+@media screen and (max-width: 400px) and (min-width: 100px) { 
+	.all-users-boxes {
+		height: 550px;
+	    width: 375px;
+		flex-direction: column;
+		align-items: center;
 	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	.pg-home {
+		text-align: center;
+	}
+
+	.addPerfil figure {
+		height: 100px;
+		padding-top: 25px;
+	}
+	
+	.addPerfil img {
+		width: 75px;
+		height: 75px;
+	}
+
+	h3 {
+		font-size: 10px;
+	}
+
+	ul img {
+		width: 100px;
+		height: 100px;
+	}
+
+	li {
+		width: 100px;
+	}
+
+	ul figure {
+		height: 100px;
+		width: 100px;
+	}
+
+	header img {
+		width: 200px;
+	}
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 401px) { 
+	.all-users-boxes {
+		height: 500px;
+	    max-width: 600px;
+	    width: 500px;
+	    display: inline-block;
+		column-count: 2;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	.pg-home {
+		text-align: center;
+	}
+
+	header img {
+		width: 250px;
+	}
+
+}
